@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.section1{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/s.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    .logo{
+        img{
+            margin-top: 20px;
+            width: 200px;
+            height: 80px;
+        }
+    }
+    .navlist{
+        margin-right: 20px;
+        .nav-list{
+             display: flex;
+             
+             .nav-item{
+                 padding-right: 10px;
+                 .icmenu{
+                    display: none;
+                }
+                 a{
+                     color:white;
+                     font-weight: 600;
+                     padding: 15px;
+                     &:hover{
+                         color:wheat;
+                         transition: 500ms;
+                         text-decoration: underline;
+                     }
+                 }
+             }
+             .bu:hover .icmenu{
+                 display:block;
+                 position:absolute;
+                 background-color: rgba(0, 0, 0, 0.6);
+                 margin-top: 5px;
+                 padding: 20px;
+                 margin-left: -15px;
+             }
+        }
+       
+    }
+}
+.ortayazi{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .basliklar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        h2{
+            position: absolute;
+            word-break: unset;
+            white-space: nowrap;
+            bottom: 50%;
+            margin: 50px;
+            letter-spacing: 15px;
+            font-weight: 100;
+            color:white;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: 10px;
+            word-spacing: 10px;
+            color: white;
+            white-space: nowrap;
+        }
+    }
+    .button{
+        margin: 0 auto;
+        position: relative;
+        
+        .deneme{
+            position: absolute;
+            margin-top: 60px;
+            padding: 15px 45px;
+            white-space: nowrap;
+            line-height: 20px;
+            font-size: 20px;
+            transform: translateX(-50%);
+            background: transparent;
+            border: 1 px solid white;
+            border-radius: 20px;
+            outline: none;
+            color: white;
+            &:hover{
+                transition: 1s;
+                cursor: pointer;
+                background: linear-gradient(rgba(0, 0, 0, .9));
+            }
+        }
+    }
+}
+
+
+
+
+
+

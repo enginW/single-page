@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.section1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(../img/s.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../img/s.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75px;
+}
+
+.header .logo img {
+  margin-top: 20px;
+  width: 200px;
+  height: 80px;
+}
+
+.header .navlist {
+  margin-right: 20px;
+}
+
+.header .navlist .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navlist .nav-list .nav-item {
+  padding-right: 10px;
+}
+
+.header .navlist .nav-list .nav-item .icmenu {
+  display: none;
+}
+
+.header .navlist .nav-list .nav-item a {
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.header .navlist .nav-list .nav-item a:hover {
+  color: wheat;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  text-decoration: underline;
+}
+
+.header .navlist .nav-list .bu:hover .icmenu {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 5px;
+  padding: 20px;
+  margin-left: -15px;
+}
+
+.ortayazi {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ortayazi .basliklar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.ortayazi .basliklar h2 {
+  position: absolute;
+  word-break: unset;
+  white-space: nowrap;
+  bottom: 50%;
+  margin: 50px;
+  letter-spacing: 15px;
+  font-weight: 100;
+  color: white;
+}
+
+.ortayazi .basliklar h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  color: white;
+  white-space: nowrap;
+}
+
+.ortayazi .button {
+  margin: 0 auto;
+  position: relative;
+}
+
+.ortayazi .button .deneme {
+  position: absolute;
+  margin-top: 60px;
+  padding: 15px 45px;
+  white-space: nowrap;
+  line-height: 20px;
+  font-size: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: transparent;
+  border: 1 px solid white;
+  border-radius: 20px;
+  outline: none;
+  color: white;
+}
+
+.ortayazi .button .deneme:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgba(0, 0, 0, 0.9));
+}
+/*# sourceMappingURL=main.css.map */
